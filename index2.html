@@ -1,0 +1,596 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_004{font-family:Arial,serif;font-size:12.1px;color:rgb(36,64,143);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:12.1px;color:rgb(36,64,143);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:40.0px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:40.0px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:20.1px;color:rgb(183,227,244);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:20.1px;color:rgb(183,227,244);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:20.1px;color:rgb(183,227,244);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:20.1px;color:rgb(183,227,244);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:10.6px;color:rgb(12,158,217);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:10.6px;color:rgb(12,158,217);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:8.1px;color:rgb(73,73,77);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:8.1px;color:rgb(73,73,77);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:18.1px;color:rgb(12,158,217);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:18.1px;color:rgb(12,158,217);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:10.0px;color:rgb(12,158,217);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:10.0px;color:rgb(12,158,217);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:5.3px;color:rgb(73,73,77);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:5.3px;color:rgb(73,73,77);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:12.1px;color:rgb(12,158,217);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:12.1px;color:rgb(12,158,217);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:18.1px;color:rgb(12,158,217);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:18.1px;color:rgb(12,158,217);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:10.0px;color:rgb(12,158,217);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:10.0px;color:rgb(12,158,217);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:10.6px;color:rgb(12,158,217);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:10.6px;color:rgb(12,158,217);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:7.0px;color:rgb(180,180,180);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:7.0px;color:rgb(180,180,180);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:9.1px;color:rgb(36,64,143);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:9.1px;color:rgb(36,64,143);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:8.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:8.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_002{font-family:Arial,serif;font-size:9.1px;color:rgb(36,64,143);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:9.1px;color:rgb(36,64,143);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:24.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:24.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:10.6px;color:rgb(36,64,143);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:10.6px;color:rgb(36,64,143);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Arial,serif;font-size:32.1px;color:rgb(36,64,143);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Arial,serif;font-size:32.1px;color:rgb(36,64,143);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:10.0px;color:rgb(73,73,77);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:10.0px;color:rgb(73,73,77);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:8.1px;color:rgb(145,145,148);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:8.1px;color:rgb(145,145,148);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Arial,serif;font-size:7.0px;color:rgb(73,73,77);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Arial,serif;font-size:7.0px;color:rgb(73,73,77);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:7.0px;color:rgb(36,64,143);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:7.0px;color:rgb(36,64,143);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:6.0px;color:rgb(36,64,143);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:6.0px;color:rgb(36,64,143);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Arial,serif;font-size:8.1px;color:rgb(73,73,77);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Arial,serif;font-size:8.1px;color:rgb(73,73,77);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:10.0px;color:rgb(73,73,77);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:10.0px;color:rgb(73,73,77);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:9.1px;color:rgb(73,73,77);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:9.1px;color:rgb(73,73,77);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:10.6px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:10.6px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:32.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:32.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:9.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:9.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:8.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:8.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Arial,serif;font-size:7.6px;color:rgb(12,158,217);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Arial,serif;font-size:7.6px;color:rgb(12,158,217);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Arial,serif;font-size:7.6px;color:rgb(73,73,77);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Arial,serif;font-size:7.6px;color:rgb(73,73,77);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:7.6px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:7.6px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_037{font-family:Arial,serif;font-size:8.1px;color:rgb(183,227,244);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_037{font-family:Arial,serif;font-size:8.1px;color:rgb(183,227,244);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_038{font-family:Arial,serif;font-size:7.6px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_038{font-family:Arial,serif;font-size:7.6px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_039{font-family:Arial,serif;font-size:5.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_039{font-family:Arial,serif;font-size:5.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_040{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_040{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_041{font-family:Arial,serif;font-size:11.1px;color:rgb(183,227,244);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_041{font-family:Arial,serif;font-size:11.1px;color:rgb(183,227,244);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_042{font-family:Arial,serif;font-size:14.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_042{font-family:Arial,serif;font-size:14.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_043{font-family:Arial,serif;font-size:9.1px;color:rgb(183,227,244);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_043{font-family:Arial,serif;font-size:9.1px;color:rgb(183,227,244);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_044{font-family:Arial,serif;font-size:10.0px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_044{font-family:Arial,serif;font-size:10.0px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_045{font-family:Arial,serif;font-size:9.1px;color:rgb(183,227,244);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_045{font-family:Arial,serif;font-size:9.1px;color:rgb(183,227,244);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_046{font-family:Arial,serif;font-size:7.6px;color:rgb(183,227,244);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_046{font-family:Arial,serif;font-size:7.6px;color:rgb(183,227,244);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_050{font-family:Arial,serif;font-size:8.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_050{font-family:Arial,serif;font-size:8.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_047{font-family:Arial,serif;font-size:12.1px;color:rgb(36,64,143);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_047{font-family:Arial,serif;font-size:12.1px;color:rgb(36,64,143);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_048{font-family:Arial,serif;font-size:12.1px;color:rgb(12,158,217);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_048{font-family:Arial,serif;font-size:12.1px;color:rgb(12,158,217);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_049{font-family:Arial,serif;font-size:6.0px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_049{font-family:Arial,serif;font-size:6.0px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="26e31418-1701-11ec-a980-0cc47a792c0a_id_26e31418-1701-11ec-a980-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="26e31418-1701-11ec-a980-0cc47a792c0a_id_26e31418-1701-11ec-a980-0cc47a792c0a_files/background1.jpg" width=612 height=792></div>
+<div style="position:absolute;left:42.36px;top:123.77px" class="cls_004"><span class="cls_004">Q1 2021</span></div>
+<div style="position:absolute;left:39.77px;top:159.19px" class="cls_005"><span class="cls_005">Calgary</span></div>
+<div style="position:absolute;left:42.17px;top:209.28px" class="cls_006"><span class="cls_006">Industrial </span><span class="cls_007">Market Report</span></div>
+<div style="position:absolute;left:42.53px;top:273.91px" class="cls_008"><span class="cls_008">Net Absorption</span></div>
+<div style="position:absolute;left:224.52px;top:273.91px" class="cls_008"><span class="cls_008">Market Outlook</span></div>
+<div style="position:absolute;left:224.52px;top:292.73px" class="cls_009"><span class="cls_009">The Calgary industrial market continued to see</span></div>
+<div style="position:absolute;left:406.25px;top:292.73px" class="cls_009"><span class="cls_009">Eastlake condo development, which caters to</span></div>
+<div style="position:absolute;left:42.53px;top:295.44px" class="cls_009"><span class="cls_009">This Quarter</span></div>
+<div style="position:absolute;left:128.69px;top:295.44px" class="cls_009"><span class="cls_009">Previous Quarter</span></div>
+<div style="position:absolute;left:224.52px;top:302.69px" class="cls_009"><span class="cls_009">an influx of activity as we transitioned from a</span></div>
+<div style="position:absolute;left:406.25px;top:302.69px" class="cls_009"><span class="cls_009">small and medium-bay owner/occupiers.</span></div>
+<div style="position:absolute;left:224.52px;top:312.65px" class="cls_009"><span class="cls_009">resilient final quarter of 2020 into one that saw</span></div>
+<div style="position:absolute;left:42.53px;top:307.63px" class="cls_014"><span class="cls_014">1.43M </span><span class="cls_010">SF</span></div>
+<div style="position:absolute;left:129.24px;top:307.63px" class="cls_014"><span class="cls_014">782K </span><span class="cls_010">SF</span></div>
+<div style="position:absolute;left:224.52px;top:322.73px" class="cls_009"><span class="cls_009">some of the strongest leasing and sales that has</span></div>
+<div style="position:absolute;left:406.25px;top:322.73px" class="cls_009"><span class="cls_009">The lack of new supply and speculative</span></div>
+<div style="position:absolute;left:224.52px;top:332.69px" class="cls_009"><span class="cls_009">been experienced in recent years. The driving</span></div>
+<div style="position:absolute;left:406.25px;top:332.69px" class="cls_009"><span class="cls_009">development currently under construction</span></div>
+<div style="position:absolute;left:42.53px;top:338.76px" class="cls_009"><span class="cls_009">12-Month Absorption</span></div>
+<div style="position:absolute;left:224.52px;top:342.65px" class="cls_009"><span class="cls_009">force behind this momentum has been pent-up</span></div>
+<div style="position:absolute;left:406.25px;top:342.65px" class="cls_009"><span class="cls_009">within the city limits, alongside the shortage</span></div>
+<div style="position:absolute;left:224.52px;top:352.73px" class="cls_009"><span class="cls_009">demand in the distribution/logistics sector, and a</span></div>
+<div style="position:absolute;left:406.25px;top:352.73px" class="cls_009"><span class="cls_009">of development ready land opportunities, will</span></div>
+<div style="position:absolute;left:42.62px;top:350.78px" class="cls_014"><span class="cls_014">2.86M</span></div>
+<div style="position:absolute;left:96.26px;top:358.82px" class="cls_010"><span class="cls_010">SF</span></div>
+<div style="position:absolute;left:224.52px;top:362.69px" class="cls_009"><span class="cls_009">shift in supply chain networks, as many large-</span></div>
+<div style="position:absolute;left:406.25px;top:362.69px" class="cls_009"><span class="cls_009">force users to continue to look for space in</span></div>
+<div style="position:absolute;left:224.52px;top:372.67px" class="cls_009"><span class="cls_009">scale companies are now more focused on</span></div>
+<div style="position:absolute;left:406.25px;top:372.67px" class="cls_009"><span class="cls_009">Balzac or the 84</span><span class="cls_013"><sup>th</sup></span><span class="cls_009"> Street corridor. Leasing in</span></div>
+<div style="position:absolute;left:224.52px;top:382.75px" class="cls_009"><span class="cls_009">utilizing 3PL’s to handle their storage and</span></div>
+<div style="position:absolute;left:406.25px;top:382.75px" class="cls_009"><span class="cls_009">the Balzac market has substantially contributed</span></div>
+<div style="position:absolute;left:224.52px;top:392.71px" class="cls_009"><span class="cls_009">distribution. As part of this shift, Metro Logistics</span></div>
+<div style="position:absolute;left:406.25px;top:392.71px" class="cls_009"><span class="cls_009">to the market activity that was experienced</span></div>
+<div style="position:absolute;left:42.53px;top:393.72px" class="cls_008"><span class="cls_008">Vacancy</span></div>
+<div style="position:absolute;left:224.52px;top:402.67px" class="cls_009"><span class="cls_009">completed two notable lease transactions in the</span></div>
+<div style="position:absolute;left:406.25px;top:402.67px" class="cls_009"><span class="cls_009">throughout the entirety of 2020, and we</span></div>
+<div style="position:absolute;left:224.52px;top:412.75px" class="cls_009"><span class="cls_009">first quarter for a combined ±321,272 square</span></div>
+<div style="position:absolute;left:406.25px;top:412.75px" class="cls_009"><span class="cls_009">anticipate that this trend will persist as space</span></div>
+<div style="position:absolute;left:42.53px;top:415.27px" class="cls_009"><span class="cls_009">This Quarter</span></div>
+<div style="position:absolute;left:128.69px;top:415.27px" class="cls_009"><span class="cls_009">Quarter-over-Quarter</span></div>
+<div style="position:absolute;left:224.52px;top:422.71px" class="cls_009"><span class="cls_009">feet. Although there has been a heavy focus on</span></div>
+<div style="position:absolute;left:406.25px;top:422.71px" class="cls_009"><span class="cls_009">continues to transact within the city limits.</span></div>
+<div style="position:absolute;left:224.52px;top:432.67px" class="cls_009"><span class="cls_009">these types of users, the Calgary industrial</span></div>
+<div style="position:absolute;left:406.25px;top:432.67px" class="cls_009"><span class="cls_009">The market has experienced a spike in land</span></div>
+<div style="position:absolute;left:42.53px;top:427.66px" class="cls_014"><span class="cls_014">5.35</span><span class="cls_015"><sup>%</sup></span></div>
+<div style="position:absolute;left:146.09px;top:427.66px" class="cls_014"><span class="cls_014">82</span><span class="cls_010"> bps</span></div>
+<div style="position:absolute;left:224.52px;top:442.75px" class="cls_009"><span class="cls_009">market is home to a diversified tenant mix.</span></div>
+<div style="position:absolute;left:406.25px;top:442.75px" class="cls_009"><span class="cls_009">sales, as many developers push to break ground</span></div>
+<div style="position:absolute;left:224.52px;top:452.71px" class="cls_009"><span class="cls_009">One of the most notable trends that has been</span></div>
+<div style="position:absolute;left:406.25px;top:452.71px" class="cls_009"><span class="cls_009">on new projects, taking advantage of the current</span></div>
+<div style="position:absolute;left:42.53px;top:458.76px" class="cls_009"><span class="cls_009">Year-over-Year</span></div>
+<div style="position:absolute;left:224.52px;top:462.67px" class="cls_009"><span class="cls_009">evident is the emergence of the film industry</span></div>
+<div style="position:absolute;left:406.25px;top:462.67px" class="cls_009"><span class="cls_009">market conditions, despite the increase in</span></div>
+<div style="position:absolute;left:224.52px;top:472.75px" class="cls_009"><span class="cls_009">and the significant focus on Calgary and the</span></div>
+<div style="position:absolute;left:406.25px;top:472.75px" class="cls_009"><span class="cls_009">construction costs and building materials.</span></div>
+<div style="position:absolute;left:59.40px;top:470.91px" class="cls_016"><span class="cls_016">72</span></div>
+<div style="position:absolute;left:83.76px;top:478.95px" class="cls_011"><span class="cls_011">bps</span></div>
+<div style="position:absolute;left:224.52px;top:482.71px" class="cls_009"><span class="cls_009">surrounding area as a film and television</span></div>
+<div style="position:absolute;left:224.52px;top:492.67px" class="cls_009"><span class="cls_009">production hub. Groups including William F.</span></div>
+<div style="position:absolute;left:406.25px;top:492.67px" class="cls_009"><span class="cls_009">Although industrial investment activity among</span></div>
+<div style="position:absolute;left:224.52px;top:502.75px" class="cls_009"><span class="cls_009">White, SIM International, Amazon Prime, and</span></div>
+<div style="position:absolute;left:406.25px;top:502.75px" class="cls_009"><span class="cls_009">institutional quality product has been muted</span></div>
+<div style="position:absolute;left:224.52px;top:512.74px" class="cls_009"><span class="cls_009">Disney have all leased a significant portion of</span></div>
+<div style="position:absolute;left:406.25px;top:512.74px" class="cls_009"><span class="cls_009">this quarter, there has been a flurry of interest</span></div>
+<div style="position:absolute;left:42.53px;top:513.89px" class="cls_008"><span class="cls_008">Availability</span></div>
+<div style="position:absolute;left:224.52px;top:522.70px" class="cls_009"><span class="cls_009">industrial space over the first quarter, which</span></div>
+<div style="position:absolute;left:406.25px;top:522.70px" class="cls_009"><span class="cls_009">for well-tenanted, small-to-medium bay</span></div>
+<div style="position:absolute;left:224.52px;top:532.78px" class="cls_009"><span class="cls_009">drastically contributed to the decrease in vacancy.</span></div>
+<div style="position:absolute;left:406.25px;top:532.78px" class="cls_009"><span class="cls_009">product. The preference has been for assets</span></div>
+<div style="position:absolute;left:42.53px;top:535.56px" class="cls_009"><span class="cls_009">This Quarter</span></div>
+<div style="position:absolute;left:128.69px;top:535.32px" class="cls_009"><span class="cls_009">Quarter-over-Quarter</span></div>
+<div style="position:absolute;left:406.25px;top:542.74px" class="cls_009"><span class="cls_009">with strong covenants (ideally single tenant)</span></div>
+<div style="position:absolute;left:224.52px;top:552.70px" class="cls_009"><span class="cls_009">As a result of a diverse mix of occupiers taking</span></div>
+<div style="position:absolute;left:406.25px;top:552.70px" class="cls_009"><span class="cls_009">and 4+ year weighted average lease terms to</span></div>
+<div style="position:absolute;left:42.53px;top:548.14px" class="cls_014"><span class="cls_014">10.36</span><span class="cls_015"><sup>%</sup></span></div>
+<div style="position:absolute;left:146.09px;top:548.14px" class="cls_014"><span class="cls_014">21 </span><span class="cls_010">bps</span></div>
+<div style="position:absolute;left:224.52px;top:562.78px" class="cls_009"><span class="cls_009">on space, absorption this quarter almost</span></div>
+<div style="position:absolute;left:406.25px;top:562.78px" class="cls_009"><span class="cls_009">get through a recovery period. We anticipate</span></div>
+<div style="position:absolute;left:224.52px;top:572.74px" class="cls_009"><span class="cls_009">equivalated to the total amount of absorption</span></div>
+<div style="position:absolute;left:406.25px;top:572.74px" class="cls_009"><span class="cls_009">more turnover in institutional grade market</span></div>
+<div style="position:absolute;left:42.53px;top:579.36px" class="cls_009"><span class="cls_009">Year-over-Year</span></div>
+<div style="position:absolute;left:224.52px;top:582.70px" class="cls_009"><span class="cls_009">that was experienced in 2020. This significant</span></div>
+<div style="position:absolute;left:406.25px;top:582.70px" class="cls_009"><span class="cls_009">looking out to Q2/Q3 of 2021.</span></div>
+<div style="position:absolute;left:224.52px;top:592.78px" class="cls_009"><span class="cls_009">positive absorption, combined with pent-up</span></div>
+<div style="position:absolute;left:59.40px;top:591.94px" class="cls_014"><span class="cls_014">32</span></div>
+<div style="position:absolute;left:83.76px;top:599.98px" class="cls_010"><span class="cls_010">bps</span></div>
+<div style="position:absolute;left:224.52px;top:602.74px" class="cls_009"><span class="cls_009">demand in the large-bay segment, and</span></div>
+<div style="position:absolute;left:406.25px;top:602.74px" class="cls_009"><span class="cls_009">Our outlook for the remainder of 2021</span></div>
+<div style="position:absolute;left:224.52px;top:612.70px" class="cls_009"><span class="cls_009">compression in Canada’s other core markets,</span></div>
+<div style="position:absolute;left:406.25px;top:612.70px" class="cls_009"><span class="cls_009">continues to stay positive as many active</span></div>
+<div style="position:absolute;left:224.52px;top:622.78px" class="cls_009"><span class="cls_009">has driven vacancy down 82 basis points to</span></div>
+<div style="position:absolute;left:406.25px;top:622.78px" class="cls_009"><span class="cls_009">groups in the market are focusing in on</span></div>
+<div style="position:absolute;left:224.52px;top:632.74px" class="cls_009"><span class="cls_009">5.35% from 6.17%. This is the largest quarter-</span></div>
+<div style="position:absolute;left:406.25px;top:632.74px" class="cls_009"><span class="cls_009">different opportunities and are expected to</span></div>
+<div style="position:absolute;left:42.53px;top:634.85px" class="cls_012"><span class="cls_012">Development</span></div>
+<div style="position:absolute;left:224.52px;top:642.70px" class="cls_009"><span class="cls_009">over-quarter decrease that we have seen since</span></div>
+<div style="position:absolute;left:406.25px;top:642.70px" class="cls_009"><span class="cls_009">transact over the next few quarters. This</span></div>
+<div style="position:absolute;left:224.52px;top:652.78px" class="cls_009"><span class="cls_009">the second quarter of 2014. Although there is just</span></div>
+<div style="position:absolute;left:406.25px;top:652.78px" class="cls_009"><span class="cls_009">momentum, coupled with minimal new supply</span></div>
+<div style="position:absolute;left:42.17px;top:656.81px" class="cls_009"><span class="cls_009">Under Construction</span></div>
+<div style="position:absolute;left:128.69px;top:656.57px" class="cls_009"><span class="cls_009">New Supply</span></div>
+<div style="position:absolute;left:224.52px;top:662.76px" class="cls_009"><span class="cls_009">over ±2.1 million square feet of new product</span></div>
+<div style="position:absolute;left:406.25px;top:662.76px" class="cls_009"><span class="cls_009">will continue to put downward pressure on</span></div>
+<div style="position:absolute;left:224.52px;top:672.72px" class="cls_009"><span class="cls_009">under construction, majority of this product is</span></div>
+<div style="position:absolute;left:406.25px;top:672.72px" class="cls_009"><span class="cls_009">vacancy rates. We are confident that it will result</span></div>
+<div style="position:absolute;left:42.53px;top:668.98px" class="cls_014"><span class="cls_014">2.1M </span><span class="cls_010">SF</span></div>
+<div style="position:absolute;left:129.24px;top:668.98px" class="cls_014"><span class="cls_014">102K </span><span class="cls_010">SF</span></div>
+<div style="position:absolute;left:224.52px;top:682.80px" class="cls_009"><span class="cls_009">purpose built, with only ±820,634 square feet of</span></div>
+<div style="position:absolute;left:406.25px;top:682.80px" class="cls_009"><span class="cls_009">in strong positive absorption numbers, which</span></div>
+<div style="position:absolute;left:224.52px;top:692.76px" class="cls_009"><span class="cls_009">speculative product under construction. The</span></div>
+<div style="position:absolute;left:406.25px;top:692.76px" class="cls_009"><span class="cls_009">should help encourage another speculative</span></div>
+<div style="position:absolute;left:224.52px;top:702.72px" class="cls_009"><span class="cls_009">most notable project to reach completion this</span></div>
+<div style="position:absolute;left:406.25px;top:702.72px" class="cls_009"><span class="cls_009">development cycle to commence in the</span></div>
+<div style="position:absolute;left:42.48px;top:714.36px" class="cls_017"><span class="cls_017">CMN Calgary Inc.</span></div>
+<div style="position:absolute;left:224.52px;top:712.80px" class="cls_009"><span class="cls_009">quarter was Building B in Beedie’s Apex at</span></div>
+<div style="position:absolute;left:406.25px;top:712.80px" class="cls_009"><span class="cls_009">greater Calgary market.</span></div>
+<div style="position:absolute;left:42.94px;top:733.46px" class="cls_018"><span class="cls_018">Accelerating success.</span></div>
+<div style="position:absolute;left:38.21px;top:760.54px" class="cls_003"><span class="cls_003">Market Outlook</span></div>
+<div style="position:absolute;left:143.45px;top:760.54px" class="cls_003"><span class="cls_003">Market Overview</span></div>
+<div style="position:absolute;left:252.19px;top:760.54px" class="cls_003"><span class="cls_003">Market Statistics</span></div>
+<div style="position:absolute;left:360.07px;top:760.54px" class="cls_003"><span class="cls_003">Transaction Highlights</span></div>
+<div style="position:absolute;left:488.74px;top:760.46px" class="cls_003"><span class="cls_003">Contact</span></div>
+<div style="position:absolute;left:567.91px;top:759.86px" class="cls_002"><span class="cls_002">1</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="26e31418-1701-11ec-a980-0cc47a792c0a_id_26e31418-1701-11ec-a980-0cc47a792c0a_files/background2.jpg" width=612 height=792></div>
+<div style="position:absolute;left:40.78px;top:55.54px" class="cls_019"><span class="cls_019">Market Overview</span></div>
+<div style="position:absolute;left:85.56px;top:123.55px" class="cls_022"><span class="cls_022">Vacancy Breakdown by Bay Size</span></div>
+<div style="position:absolute;left:405.91px;top:123.55px" class="cls_022"><span class="cls_022">Vacancy Rate by Market</span></div>
+<div style="position:absolute;left:40.78px;top:115.85px" class="cls_020"><span class="cls_020">01</span></div>
+<div style="position:absolute;left:85.56px;top:138.19px" class="cls_018"><span class="cls_018">Total Square Feet (SF)</span></div>
+<div style="position:absolute;left:361.13px;top:115.85px" class="cls_020"><span class="cls_020">02</span></div>
+<div style="position:absolute;left:405.91px;top:138.19px" class="cls_018"><span class="cls_018">Q1 2020 - Q1 2021</span></div>
+<div style="position:absolute;left:364.97px;top:160.99px" class="cls_009"><span class="cls_009">Northeast</span></div>
+<div style="position:absolute;left:431.47px;top:159.79px" class="cls_030"><span class="cls_030">5.84%</span></div>
+<div style="position:absolute;left:502.99px;top:160.99px" class="cls_029"><span class="cls_029">from 6.20% Q1’20</span></div>
+<div style="position:absolute;left:131.47px;top:172.44px" class="cls_025"><span class="cls_025">11%</span></div>
+<div style="position:absolute;left:207.17px;top:172.44px" class="cls_025"><span class="cls_025">49%</span></div>
+<div style="position:absolute;left:283.82px;top:172.44px" class="cls_025"><span class="cls_025">40%</span></div>
+<div style="position:absolute;left:364.97px;top:179.98px" class="cls_009"><span class="cls_009">Southeast</span></div>
+<div style="position:absolute;left:431.47px;top:178.78px" class="cls_030"><span class="cls_030">5.26%</span></div>
+<div style="position:absolute;left:502.99px;top:179.98px" class="cls_029"><span class="cls_029">from 6.04% Q1’20</span></div>
+<div style="position:absolute;left:364.97px;top:198.94px" class="cls_009"><span class="cls_009">Central</span></div>
+<div style="position:absolute;left:431.47px;top:197.74px" class="cls_030"><span class="cls_030">4.05%</span></div>
+<div style="position:absolute;left:502.99px;top:198.94px" class="cls_029"><span class="cls_029">from 4.47% Q1’20</span></div>
+<div style="position:absolute;left:119.16px;top:203.88px" class="cls_032"><span class="cls_032">Small Bay</span></div>
+<div style="position:absolute;left:190.66px;top:203.88px" class="cls_032"><span class="cls_032">Medium Bay</span></div>
+<div style="position:absolute;left:271.63px;top:203.88px" class="cls_032"><span class="cls_032">Large Bay</span></div>
+<div style="position:absolute;left:120.60px;top:214.32px" class="cls_033"><span class="cls_033">&lt; 10,000 SF</span></div>
+<div style="position:absolute;left:187.06px;top:214.32px" class="cls_033"><span class="cls_033">10,001 - 40,000 SF</span></div>
+<div style="position:absolute;left:273.19px;top:214.32px" class="cls_033"><span class="cls_033">> 40,001 SF</span></div>
+<div style="position:absolute;left:364.97px;top:217.92px" class="cls_009"><span class="cls_009">Balzac</span></div>
+<div style="position:absolute;left:431.47px;top:216.72px" class="cls_030"><span class="cls_030">6.92%</span></div>
+<div style="position:absolute;left:502.99px;top:217.92px" class="cls_029"><span class="cls_029">from 12.65% Q1’20</span></div>
+<div style="position:absolute;left:41.35px;top:226.94px" class="cls_009"><span class="cls_009">Vacant Units</span></div>
+<div style="position:absolute;left:129.24px;top:226.94px" class="cls_009"><span class="cls_009">128</span></div>
+<div style="position:absolute;left:205.54px;top:226.94px" class="cls_009"><span class="cls_009">165</span></div>
+<div style="position:absolute;left:284.11px;top:226.94px" class="cls_009"><span class="cls_009">32</span></div>
+<div style="position:absolute;left:364.97px;top:236.88px" class="cls_009"><span class="cls_009">Other</span></div>
+<div style="position:absolute;left:431.47px;top:235.68px" class="cls_030"><span class="cls_030">6.82%</span></div>
+<div style="position:absolute;left:502.99px;top:236.88px" class="cls_029"><span class="cls_029">from 6.01% Q1’20</span></div>
+<div style="position:absolute;left:41.35px;top:240.58px" class="cls_009"><span class="cls_009">Vacant SF</span></div>
+<div style="position:absolute;left:115.80px;top:240.58px" class="cls_009"><span class="cls_009">925,005 SF</span></div>
+<div style="position:absolute;left:188.86px;top:240.58px" class="cls_009"><span class="cls_009">4,004,161 SF</span></div>
+<div style="position:absolute;left:265.15px;top:240.58px" class="cls_009"><span class="cls_009">3,227,248 SF</span></div>
+<div style="position:absolute;left:364.97px;top:255.86px" class="cls_031"><span class="cls_031">Calgary Total</span></div>
+<div style="position:absolute;left:431.47px;top:254.66px" class="cls_030"><span class="cls_030">5.35%</span></div>
+<div style="position:absolute;left:502.99px;top:255.86px" class="cls_029"><span class="cls_029">from 6.07% Q1’20</span></div>
+<div style="position:absolute;left:41.26px;top:258.12px" class="cls_009"><span class="cls_009">There are currently over 700 listings in the Calgary industrial market, of which 325 are currently vacant.</span></div>
+<div style="position:absolute;left:85.56px;top:296.64px" class="cls_022"><span class="cls_022">Under Construction by Market</span></div>
+<div style="position:absolute;left:405.91px;top:296.64px" class="cls_022"><span class="cls_022">Availability Rate by Market</span></div>
+<div style="position:absolute;left:40.78px;top:288.94px" class="cls_020"><span class="cls_020">03</span></div>
+<div style="position:absolute;left:85.56px;top:311.28px" class="cls_018"><span class="cls_018">Total Square Feet (SF)</span></div>
+<div style="position:absolute;left:361.13px;top:288.94px" class="cls_020"><span class="cls_020">04</span></div>
+<div style="position:absolute;left:405.91px;top:311.28px" class="cls_018"><span class="cls_018">Q1 2020 - Q1 2021</span></div>
+<div style="position:absolute;left:364.97px;top:334.20px" class="cls_009"><span class="cls_009">Northeast</span></div>
+<div style="position:absolute;left:428.59px;top:332.98px" class="cls_028"><span class="cls_028">10.48%</span></div>
+<div style="position:absolute;left:502.99px;top:334.20px" class="cls_029"><span class="cls_029">from 10.50% Q1’20</span></div>
+<div style="position:absolute;left:84.84px;top:339.50px" class="cls_003"><span class="cls_003">4%</span></div>
+<div style="position:absolute;left:364.97px;top:353.18px" class="cls_009"><span class="cls_009">Southeast</span></div>
+<div style="position:absolute;left:428.59px;top:351.98px" class="cls_030"><span class="cls_030">10.14%</span></div>
+<div style="position:absolute;left:502.99px;top:353.18px" class="cls_029"><span class="cls_029">from 11.16% Q1’20</span></div>
+<div style="position:absolute;left:189.96px;top:372.31px" class="cls_009"><span class="cls_009">Balzac</span></div>
+<div style="position:absolute;left:232.80px;top:371.66px" class="cls_026"><span class="cls_026">2.0M SF</span></div>
+<div style="position:absolute;left:364.97px;top:372.14px" class="cls_009"><span class="cls_009">Central</span></div>
+<div style="position:absolute;left:431.47px;top:370.92px" class="cls_028"><span class="cls_028">7.15%</span></div>
+<div style="position:absolute;left:502.99px;top:372.14px" class="cls_029"><span class="cls_029">from 6.97% Q1’20</span></div>
+<div style="position:absolute;left:81.98px;top:375.05px" class="cls_009"><span class="cls_009">2.1M SF</span></div>
+<div style="position:absolute;left:84.98px;top:384.67px" class="cls_009"><span class="cls_009">Under</span></div>
+<div style="position:absolute;left:364.97px;top:391.13px" class="cls_009"><span class="cls_009">Balzac</span></div>
+<div style="position:absolute;left:428.59px;top:389.93px" class="cls_030"><span class="cls_030">18.58%</span></div>
+<div style="position:absolute;left:502.99px;top:391.13px" class="cls_029"><span class="cls_029">from 20.24% Q1’20</span></div>
+<div style="position:absolute;left:72.62px;top:394.27px" class="cls_009"><span class="cls_009">Construction</span></div>
+<div style="position:absolute;left:189.96px;top:396.77px" class="cls_009"><span class="cls_009">Other</span></div>
+<div style="position:absolute;left:232.80px;top:396.72px" class="cls_026"><span class="cls_026">89,000 SF</span></div>
+<div style="position:absolute;left:364.97px;top:410.09px" class="cls_009"><span class="cls_009">Other</span></div>
+<div style="position:absolute;left:428.59px;top:408.89px" class="cls_030"><span class="cls_030">10.58%</span></div>
+<div style="position:absolute;left:502.99px;top:410.09px" class="cls_029"><span class="cls_029">from 9.90% Q1’20</span></div>
+<div style="position:absolute;left:94.85px;top:431.71px" class="cls_003"><span class="cls_003">96%</span></div>
+<div style="position:absolute;left:364.97px;top:429.07px" class="cls_031"><span class="cls_031">Calgary Total</span></div>
+<div style="position:absolute;left:428.59px;top:427.87px" class="cls_030"><span class="cls_030">10.36%</span></div>
+<div style="position:absolute;left:502.99px;top:429.07px" class="cls_029"><span class="cls_029">from 10.68% Q1’20</span></div>
+<div style="position:absolute;left:85.56px;top:493.20px" class="cls_023"><span class="cls_023">Historical Overview</span></div>
+<div style="position:absolute;left:40.78px;top:485.52px" class="cls_021"><span class="cls_021">05</span></div>
+<div style="position:absolute;left:85.56px;top:507.84px" class="cls_024"><span class="cls_024">Q1 2018 - Q1 2021</span></div>
+<div style="position:absolute;left:341.42px;top:508.44px" class="cls_027"><span class="cls_027">Net Absorption</span></div>
+<div style="position:absolute;left:429.34px;top:508.44px" class="cls_027"><span class="cls_027">New Supply</span></div>
+<div style="position:absolute;left:503.88px;top:508.44px" class="cls_027"><span class="cls_027">Vacancy Rate</span></div>
+<div style="position:absolute;left:62.69px;top:536.28px" class="cls_027"><span class="cls_027">2,500,000</span></div>
+<div style="position:absolute;left:536.18px;top:536.28px" class="cls_027"><span class="cls_027">7%</span></div>
+<div style="position:absolute;left:500.45px;top:554.23px" class="cls_027"><span class="cls_027">5.35%</span></div>
+<div style="position:absolute;left:536.18px;top:554.57px" class="cls_027"><span class="cls_027">6%</span></div>
+<div style="position:absolute;left:62.69px;top:561.86px" class="cls_027"><span class="cls_027">2,000,000</span></div>
+<div style="position:absolute;left:536.18px;top:572.86px" class="cls_027"><span class="cls_027">5%</span></div>
+<div style="position:absolute;left:62.69px;top:587.47px" class="cls_027"><span class="cls_027">1,500,000</span></div>
+<div style="position:absolute;left:536.18px;top:591.14px" class="cls_027"><span class="cls_027">4%</span></div>
+<div style="position:absolute;left:536.18px;top:609.43px" class="cls_027"><span class="cls_027">3%</span></div>
+<div style="position:absolute;left:62.69px;top:613.08px" class="cls_027"><span class="cls_027">1,000,000</span></div>
+<div style="position:absolute;left:536.18px;top:627.72px" class="cls_027"><span class="cls_027">2%</span></div>
+<div style="position:absolute;left:69.22px;top:638.69px" class="cls_027"><span class="cls_027">500,000</span></div>
+<div style="position:absolute;left:536.18px;top:646.01px" class="cls_027"><span class="cls_027">1%</span></div>
+<div style="position:absolute;left:94.06px;top:664.30px" class="cls_027"><span class="cls_027">0</span></div>
+<div style="position:absolute;left:536.18px;top:664.30px" class="cls_027"><span class="cls_027">0%</span></div>
+<div style="position:absolute;left:38.21px;top:760.54px" class="cls_003"><span class="cls_003">Market Outlook</span></div>
+<div style="position:absolute;left:143.45px;top:760.54px" class="cls_003"><span class="cls_003">Market Overview</span></div>
+<div style="position:absolute;left:252.19px;top:760.54px" class="cls_003"><span class="cls_003">Market Statistics</span></div>
+<div style="position:absolute;left:360.07px;top:760.54px" class="cls_003"><span class="cls_003">Transaction Highlights</span></div>
+<div style="position:absolute;left:488.74px;top:760.46px" class="cls_003"><span class="cls_003">Contact</span></div>
+<div style="position:absolute;left:567.91px;top:759.86px" class="cls_002"><span class="cls_002">2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="26e31418-1701-11ec-a980-0cc47a792c0a_id_26e31418-1701-11ec-a980-0cc47a792c0a_files/background3.jpg" width=612 height=792></div>
+<div style="position:absolute;left:40.78px;top:55.54px" class="cls_019"><span class="cls_019">Market Statistics</span></div>
+<div style="position:absolute;left:40.78px;top:84.34px" class="cls_019"><span class="cls_019">& Transaction Highlights</span></div>
+<div style="position:absolute;left:171.67px;top:151.37px" class="cls_034"><span class="cls_034">Total</span></div>
+<div style="position:absolute;left:252.19px;top:151.37px" class="cls_034"><span class="cls_034">Direct</span></div>
+<div style="position:absolute;left:294.12px;top:151.37px" class="cls_034"><span class="cls_034">Sublease</span></div>
+<div style="position:absolute;left:348.53px;top:151.37px" class="cls_034"><span class="cls_034">Total</span></div>
+<div style="position:absolute;left:120.05px;top:160.39px" class="cls_034"><span class="cls_034">Total</span></div>
+<div style="position:absolute;left:168.19px;top:160.39px" class="cls_034"><span class="cls_034">Vacant</span></div>
+<div style="position:absolute;left:206.54px;top:160.39px" class="cls_034"><span class="cls_034">Vacancy</span></div>
+<div style="position:absolute;left:246.31px;top:160.39px" class="cls_034"><span class="cls_034">Available</span></div>
+<div style="position:absolute;left:293.52px;top:160.39px" class="cls_034"><span class="cls_034">Available</span></div>
+<div style="position:absolute;left:340.73px;top:160.39px" class="cls_034"><span class="cls_034">Available</span></div>
+<div style="position:absolute;left:387.19px;top:160.39px" class="cls_034"><span class="cls_034">Availability</span></div>
+<div style="position:absolute;left:450.10px;top:160.39px" class="cls_034"><span class="cls_034">Net</span></div>
+<div style="position:absolute;left:488.64px;top:160.39px" class="cls_034"><span class="cls_034">New</span></div>
+<div style="position:absolute;left:531.36px;top:160.39px" class="cls_034"><span class="cls_034">Under</span></div>
+<div style="position:absolute;left:45.79px;top:169.39px" class="cls_034"><span class="cls_034">Market</span></div>
+<div style="position:absolute;left:111.17px;top:169.39px" class="cls_034"><span class="cls_034">Inventory</span></div>
+<div style="position:absolute;left:170.23px;top:169.39px" class="cls_034"><span class="cls_034">Space</span></div>
+<div style="position:absolute;left:213.38px;top:169.39px" class="cls_034"><span class="cls_034">Rate</span></div>
+<div style="position:absolute;left:252.67px;top:169.39px" class="cls_034"><span class="cls_034">Space</span></div>
+<div style="position:absolute;left:299.88px;top:169.39px" class="cls_034"><span class="cls_034">Space</span></div>
+<div style="position:absolute;left:347.09px;top:169.39px" class="cls_034"><span class="cls_034">Space</span></div>
+<div style="position:absolute;left:399.67px;top:169.39px" class="cls_034"><span class="cls_034">Rate</span></div>
+<div style="position:absolute;left:436.03px;top:169.39px" class="cls_034"><span class="cls_034">Absorption</span></div>
+<div style="position:absolute;left:484.44px;top:169.39px" class="cls_034"><span class="cls_034">Supply</span></div>
+<div style="position:absolute;left:518.64px;top:169.39px" class="cls_034"><span class="cls_034">Construction</span></div>
+<div style="position:absolute;left:122.81px;top:179.71px" class="cls_034"><span class="cls_034">(SF)</span></div>
+<div style="position:absolute;left:174.43px;top:179.71px" class="cls_034"><span class="cls_034">(SF)</span></div>
+<div style="position:absolute;left:256.87px;top:179.71px" class="cls_034"><span class="cls_034">(SF)</span></div>
+<div style="position:absolute;left:304.08px;top:179.71px" class="cls_034"><span class="cls_034">(SF)</span></div>
+<div style="position:absolute;left:351.29px;top:179.71px" class="cls_034"><span class="cls_034">(SF)</span></div>
+<div style="position:absolute;left:450.19px;top:179.71px" class="cls_034"><span class="cls_034">(SF)</span></div>
+<div style="position:absolute;left:490.44px;top:179.71px" class="cls_034"><span class="cls_034">(SF)</span></div>
+<div style="position:absolute;left:536.28px;top:179.71px" class="cls_034"><span class="cls_034">(SF)</span></div>
+<div style="position:absolute;left:45.74px;top:199.25px" class="cls_035"><span class="cls_035">Northeast</span></div>
+<div style="position:absolute;left:110.45px;top:199.73px" class="cls_035"><span class="cls_035">45,296,426</span></div>
+<div style="position:absolute;left:164.21px;top:199.73px" class="cls_035"><span class="cls_035">2,644,065</span></div>
+<div style="position:absolute;left:211.34px;top:199.73px" class="cls_035"><span class="cls_035">5.84%</span></div>
+<div style="position:absolute;left:246.67px;top:199.73px" class="cls_035"><span class="cls_035">4,286,136</span></div>
+<div style="position:absolute;left:297.00px;top:199.73px" class="cls_035"><span class="cls_035">459,468</span></div>
+<div style="position:absolute;left:341.09px;top:199.73px" class="cls_035"><span class="cls_035">4,745,604</span></div>
+<div style="position:absolute;left:395.59px;top:199.73px" class="cls_035"><span class="cls_035">10.48%</span></div>
+<div style="position:absolute;left:443.14px;top:199.73px" class="cls_035"><span class="cls_035">345,650</span></div>
+<div style="position:absolute;left:495.96px;top:199.73px" class="cls_035"><span class="cls_035">-</span></div>
+<div style="position:absolute;left:541.80px;top:199.73px" class="cls_035"><span class="cls_035">-</span></div>
+<div style="position:absolute;left:45.74px;top:221.93px" class="cls_035"><span class="cls_035">Southeast</span></div>
+<div style="position:absolute;left:110.45px;top:222.41px" class="cls_035"><span class="cls_035">62,164,223</span></div>
+<div style="position:absolute;left:164.21px;top:222.41px" class="cls_035"><span class="cls_035">3,267,721</span></div>
+<div style="position:absolute;left:211.34px;top:222.41px" class="cls_035"><span class="cls_035">5.26%</span></div>
+<div style="position:absolute;left:246.67px;top:222.41px" class="cls_035"><span class="cls_035">5,642,862</span></div>
+<div style="position:absolute;left:297.00px;top:222.41px" class="cls_035"><span class="cls_035">659,404</span></div>
+<div style="position:absolute;left:341.09px;top:222.41px" class="cls_035"><span class="cls_035">6,302,266</span></div>
+<div style="position:absolute;left:395.59px;top:222.41px" class="cls_035"><span class="cls_035">10.14%</span></div>
+<div style="position:absolute;left:443.14px;top:222.41px" class="cls_035"><span class="cls_035">829,611</span></div>
+<div style="position:absolute;left:483.24px;top:222.41px" class="cls_035"><span class="cls_035">102,440</span></div>
+<div style="position:absolute;left:541.80px;top:222.41px" class="cls_035"><span class="cls_035">-</span></div>
+<div style="position:absolute;left:45.74px;top:244.61px" class="cls_035"><span class="cls_035">Central</span></div>
+<div style="position:absolute;left:110.45px;top:245.09px" class="cls_035"><span class="cls_035">29,699,085</span></div>
+<div style="position:absolute;left:164.21px;top:245.09px" class="cls_035"><span class="cls_035">1,225,066</span></div>
+<div style="position:absolute;left:211.34px;top:245.09px" class="cls_035"><span class="cls_035">4.05%</span></div>
+<div style="position:absolute;left:246.67px;top:245.09px" class="cls_035"><span class="cls_035">1,845,375</span></div>
+<div style="position:absolute;left:297.00px;top:245.09px" class="cls_035"><span class="cls_035">278,715</span></div>
+<div style="position:absolute;left:341.09px;top:245.09px" class="cls_035"><span class="cls_035">2,124,090</span></div>
+<div style="position:absolute;left:397.75px;top:245.09px" class="cls_035"><span class="cls_035">7.15%</span></div>
+<div style="position:absolute;left:445.30px;top:245.09px" class="cls_035"><span class="cls_035">23,484</span></div>
+<div style="position:absolute;left:495.96px;top:245.09px" class="cls_035"><span class="cls_035">-</span></div>
+<div style="position:absolute;left:541.80px;top:245.09px" class="cls_035"><span class="cls_035">-</span></div>
+<div style="position:absolute;left:45.74px;top:267.29px" class="cls_035"><span class="cls_035">Balzac</span></div>
+<div style="position:absolute;left:112.61px;top:267.77px" class="cls_035"><span class="cls_035">7,551,624</span></div>
+<div style="position:absolute;left:167.35px;top:267.77px" class="cls_035"><span class="cls_035">522,468</span></div>
+<div style="position:absolute;left:211.34px;top:267.77px" class="cls_035"><span class="cls_035">6.92%</span></div>
+<div style="position:absolute;left:246.67px;top:267.77px" class="cls_035"><span class="cls_035">1,802,102</span></div>
+<div style="position:absolute;left:309.60px;top:267.77px" class="cls_035"><span class="cls_035">-</span></div>
+<div style="position:absolute;left:341.09px;top:267.77px" class="cls_035"><span class="cls_035">1,802,102</span></div>
+<div style="position:absolute;left:395.59px;top:267.77px" class="cls_035"><span class="cls_035">18.58%</span></div>
+<div style="position:absolute;left:443.14px;top:267.77px" class="cls_035"><span class="cls_035">309,626</span></div>
+<div style="position:absolute;left:495.96px;top:267.77px" class="cls_035"><span class="cls_035">-</span></div>
+<div style="position:absolute;left:526.08px;top:267.77px" class="cls_035"><span class="cls_035">2,024,634</span></div>
+<div style="position:absolute;left:45.74px;top:289.97px" class="cls_035"><span class="cls_035">Other</span></div>
+<div style="position:absolute;left:112.61px;top:290.45px" class="cls_035"><span class="cls_035">7,629,889</span></div>
+<div style="position:absolute;left:167.35px;top:290.45px" class="cls_035"><span class="cls_035">520,577</span></div>
+<div style="position:absolute;left:211.34px;top:290.45px" class="cls_035"><span class="cls_035">6.82%</span></div>
+<div style="position:absolute;left:249.79px;top:290.45px" class="cls_035"><span class="cls_035">610,882</span></div>
+<div style="position:absolute;left:297.00px;top:290.45px" class="cls_035"><span class="cls_035">196,360</span></div>
+<div style="position:absolute;left:344.21px;top:290.45px" class="cls_035"><span class="cls_035">807,242</span></div>
+<div style="position:absolute;left:395.59px;top:290.45px" class="cls_035"><span class="cls_035">10.58%</span></div>
+<div style="position:absolute;left:444.07px;top:290.45px" class="cls_035"><span class="cls_035">-54,516</span></div>
+<div style="position:absolute;left:495.96px;top:290.45px" class="cls_035"><span class="cls_035">-</span></div>
+<div style="position:absolute;left:531.36px;top:290.45px" class="cls_035"><span class="cls_035">89,000</span></div>
+<div style="position:absolute;left:44.95px;top:312.65px" class="cls_036"><span class="cls_036">Calgary Total</span></div>
+<div style="position:absolute;left:108.17px;top:313.13px" class="cls_036"><span class="cls_036">152,341,265</span></div>
+<div style="position:absolute;left:163.97px;top:313.13px" class="cls_036"><span class="cls_036">8,156,413</span></div>
+<div style="position:absolute;left:210.98px;top:313.13px" class="cls_036"><span class="cls_036">5.35%</span></div>
+<div style="position:absolute;left:244.27px;top:313.13px" class="cls_036"><span class="cls_036">14,187,357</span></div>
+<div style="position:absolute;left:293.64px;top:313.13px" class="cls_036"><span class="cls_036">1,593,947</span></div>
+<div style="position:absolute;left:338.69px;top:313.13px" class="cls_036"><span class="cls_036">15,781,304</span></div>
+<div style="position:absolute;left:395.23px;top:313.13px" class="cls_036"><span class="cls_036">10.36%</span></div>
+<div style="position:absolute;left:439.75px;top:313.13px" class="cls_036"><span class="cls_036">1,453,855</span></div>
+<div style="position:absolute;left:483.12px;top:313.13px" class="cls_036"><span class="cls_036">102,440</span></div>
+<div style="position:absolute;left:525.84px;top:313.13px" class="cls_036"><span class="cls_036">2,113,634</span></div>
+<div style="position:absolute;left:42.48px;top:372.05px" class="cls_023"><span class="cls_023">Notable Lease Transactions</span></div>
+<div style="position:absolute;left:42.48px;top:395.35px" class="cls_037"><span class="cls_037">Tenant</span></div>
+<div style="position:absolute;left:171.41px;top:395.35px" class="cls_037"><span class="cls_037">Building Name / Address</span></div>
+<div style="position:absolute;left:336.70px;top:395.35px" class="cls_037"><span class="cls_037">Market</span></div>
+<div style="position:absolute;left:408.55px;top:395.35px" class="cls_037"><span class="cls_037">Lease Type</span></div>
+<div style="position:absolute;left:500.98px;top:395.35px" class="cls_037"><span class="cls_037">Size (SF)</span></div>
+<div style="position:absolute;left:42.48px;top:414.22px" class="cls_038"><span class="cls_038">Hopewell Logistics</span></div>
+<div style="position:absolute;left:171.41px;top:414.22px" class="cls_038"><span class="cls_038">High Plains Building 3</span></div>
+<div style="position:absolute;left:340.18px;top:414.22px" class="cls_038"><span class="cls_038">Balzac</span></div>
+<div style="position:absolute;left:410.23px;top:414.22px" class="cls_038"><span class="cls_038">Head Lease</span></div>
+<div style="position:absolute;left:503.76px;top:414.22px" class="cls_038"><span class="cls_038">240,800</span></div>
+<div style="position:absolute;left:42.48px;top:434.54px" class="cls_038"><span class="cls_038">Metro Logistics</span></div>
+<div style="position:absolute;left:171.41px;top:434.54px" class="cls_038"><span class="cls_038">4100 Westwinds Drive NE</span></div>
+<div style="position:absolute;left:332.26px;top:434.54px" class="cls_038"><span class="cls_038">Westwinds</span></div>
+<div style="position:absolute;left:410.23px;top:434.54px" class="cls_038"><span class="cls_038">Head Lease</span></div>
+<div style="position:absolute;left:503.76px;top:434.54px" class="cls_038"><span class="cls_038">162,250</span></div>
+<div style="position:absolute;left:42.48px;top:454.87px" class="cls_038"><span class="cls_038">Metro Logistics</span></div>
+<div style="position:absolute;left:171.41px;top:454.87px" class="cls_038"><span class="cls_038">11550 Barlow Trail NE</span></div>
+<div style="position:absolute;left:339.22px;top:454.87px" class="cls_038"><span class="cls_038">Stoney</span></div>
+<div style="position:absolute;left:410.23px;top:454.87px" class="cls_038"><span class="cls_038">Head Lease</span></div>
+<div style="position:absolute;left:503.76px;top:454.87px" class="cls_038"><span class="cls_038">159,022</span></div>
+<div style="position:absolute;left:42.48px;top:485.90px" class="cls_023"><span class="cls_023">Notable Sales Transactions</span></div>
+<div style="position:absolute;left:42.48px;top:511.70px" class="cls_037"><span class="cls_037">Building Name / Address</span></div>
+<div style="position:absolute;left:189.19px;top:511.70px" class="cls_037"><span class="cls_037">Market</span></div>
+<div style="position:absolute;left:268.42px;top:511.70px" class="cls_037"><span class="cls_037">Size (SF)</span></div>
+<div style="position:absolute;left:332.28px;top:511.70px" class="cls_037"><span class="cls_037">Sale Price</span></div>
+<div style="position:absolute;left:416.64px;top:511.70px" class="cls_037"><span class="cls_037">Purchaser</span></div>
+<div style="position:absolute;left:493.97px;top:511.70px" class="cls_037"><span class="cls_037">Purchaser Profile</span></div>
+<div style="position:absolute;left:42.48px;top:530.57px" class="cls_038"><span class="cls_038">4640 - 72</span><span class="cls_039"><sup>nd</sup></span><span class="cls_038"> Avenue SE</span></div>
+<div style="position:absolute;left:191.14px;top:530.57px" class="cls_038"><span class="cls_038">Foothills</span></div>
+<div style="position:absolute;left:270.46px;top:530.57px" class="cls_038"><span class="cls_038">226,600</span></div>
+<div style="position:absolute;left:330.36px;top:530.57px" class="cls_038"><span class="cls_038">$24,000,000</span></div>
+<div style="position:absolute;left:404.95px;top:530.57px" class="cls_038"><span class="cls_038">Groupe Touchette</span></div>
+<div style="position:absolute;left:520.15px;top:530.57px" class="cls_038"><span class="cls_038">User</span></div>
+<div style="position:absolute;left:42.48px;top:550.90px" class="cls_038"><span class="cls_038">1616 Meridian Road NE</span></div>
+<div style="position:absolute;left:175.27px;top:550.90px" class="cls_038"><span class="cls_038">Meridian Franklin</span></div>
+<div style="position:absolute;left:272.62px;top:550.90px" class="cls_038"><span class="cls_038">83,386</span></div>
+<div style="position:absolute;left:332.52px;top:550.90px" class="cls_038"><span class="cls_038">$7,000,000</span></div>
+<div style="position:absolute;left:390.55px;top:550.90px" class="cls_038"><span class="cls_038">Geo Pressure Systems Inc.</span></div>
+<div style="position:absolute;left:520.15px;top:550.90px" class="cls_038"><span class="cls_038">User</span></div>
+<div style="position:absolute;left:42.48px;top:571.22px" class="cls_038"><span class="cls_038">72 Technology Way SE</span></div>
+<div style="position:absolute;left:165.79px;top:571.22px" class="cls_038"><span class="cls_038">Shepard Business Park</span></div>
+<div style="position:absolute;left:272.62px;top:571.22px" class="cls_038"><span class="cls_038">50,108</span></div>
+<div style="position:absolute;left:332.52px;top:571.22px" class="cls_038"><span class="cls_038">$9,400,000</span></div>
+<div style="position:absolute;left:407.71px;top:571.22px" class="cls_038"><span class="cls_038">Nor Land 72 Ltd.</span></div>
+<div style="position:absolute;left:520.15px;top:571.22px" class="cls_038"><span class="cls_038">User</span></div>
+<div style="position:absolute;left:42.48px;top:602.26px" class="cls_023"><span class="cls_023">Notable Developments</span></div>
+<div style="position:absolute;left:42.48px;top:628.39px" class="cls_037"><span class="cls_037">Building Name / Address    Class</span></div>
+<div style="position:absolute;left:205.56px;top:628.49px" class="cls_037"><span class="cls_037">Market</span></div>
+<div style="position:absolute;left:265.30px;top:628.49px" class="cls_037"><span class="cls_037">Building Status</span></div>
+<div style="position:absolute;left:346.01px;top:628.39px" class="cls_037"><span class="cls_037">Size (SF)   Est. Completion   Owner / Developer</span></div>
+<div style="position:absolute;left:42.48px;top:647.30px" class="cls_038"><span class="cls_038">Apex at Eastlake Building B</span></div>
+<div style="position:absolute;left:158.26px;top:647.35px" class="cls_038"><span class="cls_038">AAA</span></div>
+<div style="position:absolute;left:205.80px;top:647.35px" class="cls_038"><span class="cls_038">Eastlake</span></div>
+<div style="position:absolute;left:274.68px;top:647.35px" class="cls_038"><span class="cls_038">New Supply</span></div>
+<div style="position:absolute;left:350.33px;top:647.35px" class="cls_038"><span class="cls_038">91,869</span></div>
+<div style="position:absolute;left:395.88px;top:647.35px" class="cls_038"><span class="cls_038">Completed Q1</span></div>
+<div style="position:absolute;left:462.96px;top:647.30px" class="cls_038"><span class="cls_038">Beedie Development</span></div>
+<div style="position:absolute;left:42.48px;top:667.63px" class="cls_038"><span class="cls_038">High Plains Building 7</span></div>
+<div style="position:absolute;left:158.26px;top:667.68px" class="cls_038"><span class="cls_038">AAA</span></div>
+<div style="position:absolute;left:209.04px;top:667.68px" class="cls_038"><span class="cls_038">Balzac</span></div>
+<div style="position:absolute;left:260.88px;top:667.68px" class="cls_038"><span class="cls_038">Under Construction</span></div>
+<div style="position:absolute;left:348.17px;top:667.68px" class="cls_038"><span class="cls_038">409,360</span></div>
+<div style="position:absolute;left:406.56px;top:667.68px" class="cls_038"><span class="cls_038">Q3 2021</span></div>
+<div style="position:absolute;left:462.96px;top:667.63px" class="cls_038"><span class="cls_038">Highfield Investment Group</span></div>
+<div style="position:absolute;left:42.48px;top:687.96px" class="cls_038"><span class="cls_038">High Plains Building 8</span></div>
+<div style="position:absolute;left:158.26px;top:688.01px" class="cls_038"><span class="cls_038">AAA</span></div>
+<div style="position:absolute;left:209.04px;top:688.01px" class="cls_038"><span class="cls_038">Balzac</span></div>
+<div style="position:absolute;left:260.88px;top:688.01px" class="cls_038"><span class="cls_038">Under Construction</span></div>
+<div style="position:absolute;left:348.17px;top:688.01px" class="cls_038"><span class="cls_038">185,000</span></div>
+<div style="position:absolute;left:406.56px;top:688.01px" class="cls_038"><span class="cls_038">Q4 2021</span></div>
+<div style="position:absolute;left:462.96px;top:687.96px" class="cls_038"><span class="cls_038">Highfield Investment Group</span></div>
+<div style="position:absolute;left:38.21px;top:760.54px" class="cls_003"><span class="cls_003">Market Outlook</span></div>
+<div style="position:absolute;left:143.45px;top:760.54px" class="cls_003"><span class="cls_003">Market Overview</span></div>
+<div style="position:absolute;left:252.19px;top:760.54px" class="cls_003"><span class="cls_003">Market Statistics</span></div>
+<div style="position:absolute;left:360.07px;top:760.54px" class="cls_003"><span class="cls_003">Transaction Highlights</span></div>
+<div style="position:absolute;left:488.74px;top:760.46px" class="cls_003"><span class="cls_003">Contact</span></div>
+<div style="position:absolute;left:567.91px;top:759.86px" class="cls_002"><span class="cls_002">3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="26e31418-1701-11ec-a980-0cc47a792c0a_id_26e31418-1701-11ec-a980-0cc47a792c0a_files/background4.jpg" width=612 height=792></div>
+<div style="position:absolute;left:42.31px;top:38.45px" class="cls_040"><span class="cls_040">Colliers Research</span></div>
+<div style="position:absolute;left:42.31px;top:74.09px" class="cls_041"><span class="cls_041">We are the industry cornerstone of authoritative statistics,</span></div>
+<div style="position:absolute;left:42.31px;top:90.05px" class="cls_041"><span class="cls_041">forecasts and market commentary across Canada.</span></div>
+<div style="position:absolute;left:42.31px;top:117.89px" class="cls_024"><span class="cls_024">With more than 20 years of comprehensive market data, extensive research</span></div>
+<div style="position:absolute;left:42.31px;top:130.85px" class="cls_024"><span class="cls_024">capabilities and access to ‘live’ deal information - there is no other research firm in</span></div>
+<div style="position:absolute;left:42.31px;top:143.93px" class="cls_024"><span class="cls_024">Canada that can provide such a complete commercial real estate research solution.</span></div>
+<div style="position:absolute;left:42.31px;top:162.91px" class="cls_024"><span class="cls_024">With more than 20 dedicated research specialists, supported by over 35 data</span></div>
+<div style="position:absolute;left:42.31px;top:175.87px" class="cls_024"><span class="cls_024">intelligence analysts - our world-class researchers are continuously sourcing and</span></div>
+<div style="position:absolute;left:42.31px;top:188.95px" class="cls_024"><span class="cls_024">analyzing data in every major market across Canada - to ensure our clients receive the</span></div>
+<div style="position:absolute;left:42.31px;top:201.91px" class="cls_024"><span class="cls_024">most accurate and powerful information to make critical decisions for their future.</span></div>
+<div style="position:absolute;left:42.31px;top:228.67px" class="cls_042"><span class="cls_042">Core services:</span></div>
+<div style="position:absolute;left:42.31px;top:257.35px" class="cls_043"><span class="cls_043">•  Predictive market research</span></div>
+<div style="position:absolute;left:42.31px;top:271.39px" class="cls_043"><span class="cls_043">•  Reporting on key insights and trends</span></div>
+<div style="position:absolute;left:42.31px;top:285.43px" class="cls_043"><span class="cls_043">•  Access to the latest market data</span></div>
+<div style="position:absolute;left:42.31px;top:299.35px" class="cls_043"><span class="cls_043">•  Customized research engagements</span></div>
+<div style="position:absolute;left:42.31px;top:360.36px" class="cls_044"><span class="cls_044">For more information on the</span></div>
+<div style="position:absolute;left:42.31px;top:372.36px" class="cls_044"><span class="cls_044">Calgary Industrial Market, please contact:</span></div>
+<div style="position:absolute;left:42.31px;top:396.48px" class="cls_045"><span class="cls_045">Matt Rachiele, </span><span class="cls_046">CFA</span></div>
+<div style="position:absolute;left:170.98px;top:396.38px" class="cls_045"><span class="cls_045">Roelof van Dijk</span></div>
+<div style="position:absolute;left:311.93px;top:396.38px" class="cls_045"><span class="cls_045">Leo Lee</span></div>
+<div style="position:absolute;left:42.31px;top:411.24px" class="cls_027"><span class="cls_027">Managing Director,</span></div>
+<div style="position:absolute;left:170.98px;top:411.14px" class="cls_027"><span class="cls_027">Senior Director, National</span></div>
+<div style="position:absolute;left:311.93px;top:411.14px" class="cls_027"><span class="cls_027">Director, National</span></div>
+<div style="position:absolute;left:42.31px;top:420.84px" class="cls_027"><span class="cls_027">Calgary Brokerage</span></div>
+<div style="position:absolute;left:170.98px;top:420.74px" class="cls_027"><span class="cls_027">Research & Analytics | Canada</span></div>
+<div style="position:absolute;left:311.93px;top:420.74px" class="cls_027"><span class="cls_027">Research Operations | Canada</span></div>
+<div style="position:absolute;left:42.31px;top:430.44px" class="cls_027"><span class="cls_027">+1 403 629 0402</span></div>
+<div style="position:absolute;left:170.98px;top:430.34px" class="cls_027"><span class="cls_027">+1 416 798 0991</span></div>
+<div style="position:absolute;left:311.93px;top:430.34px" class="cls_027"><span class="cls_027">+1 416 620 2839</span></div>
+<div style="position:absolute;left:42.31px;top:440.04px" class="cls_050"><span class="cls_050"> </span><A HREF="mailto:matt.rachiele@colliers.com">matt.rachiele@colliers.com</A> </div>
+<div style="position:absolute;left:170.98px;top:439.94px" class="cls_050"><span class="cls_050"> </span><A HREF="mailto:roelof.vandijk@colliers.com">roelof.vandijk@colliers.com</A> </div>
+<div style="position:absolute;left:311.93px;top:439.94px" class="cls_050"><span class="cls_050"> </span><A HREF="mailto:leo.lee@colliers.com">leo.lee@colliers.com</A> </div>
+<div style="position:absolute;left:43.06px;top:465.79px" class="cls_003"><span class="cls_003">Report Contributors:</span></div>
+<div style="position:absolute;left:43.08px;top:485.66px" class="cls_036"><span class="cls_036">Paul Marsden </span><span class="cls_038">| Executive Vice President/Partner</span></div>
+<div style="position:absolute;left:249.77px;top:485.66px" class="cls_036"><span class="cls_036">Zack Darragh </span><span class="cls_038">| Senior Associate</span></div>
+<div style="position:absolute;left:43.08px;top:495.62px" class="cls_036"><span class="cls_036">Matt Binfet</span><span class="cls_038"> | Executive Vice President</span></div>
+<div style="position:absolute;left:249.77px;top:495.62px" class="cls_036"><span class="cls_036">Kyle Bietz </span><span class="cls_038">| Associate</span></div>
+<div style="position:absolute;left:43.08px;top:505.58px" class="cls_036"><span class="cls_036">Neil Ferris </span><span class="cls_038">|Senior Vice President/Partner</span></div>
+<div style="position:absolute;left:249.77px;top:505.58px" class="cls_036"><span class="cls_036">Jessica Luettecke </span><span class="cls_038">| Transaction Manager/Associate</span></div>
+<div style="position:absolute;left:43.08px;top:515.66px" class="cls_036"><span class="cls_036">Evan Truman </span><span class="cls_038">| Vice President/Partner</span></div>
+<div style="position:absolute;left:249.77px;top:515.66px" class="cls_036"><span class="cls_036">Jessica Wurz </span><span class="cls_038">| Transaction Manager/Associate</span></div>
+<div style="position:absolute;left:43.08px;top:525.62px" class="cls_036"><span class="cls_036">Josh Magnussen | </span><span class="cls_038">Vice President/Partner</span></div>
+<div style="position:absolute;left:249.77px;top:525.62px" class="cls_036"><span class="cls_036">Jennifer Robertson </span><span class="cls_038">| Industrial Project Specialist</span></div>
+<div style="position:absolute;left:43.08px;top:535.58px" class="cls_036"><span class="cls_036">Brad Pilling </span><span class="cls_038">| Vice President</span></div>
+<div style="position:absolute;left:249.77px;top:535.58px" class="cls_036"><span class="cls_036">Jodie Fedkiw </span><span class="cls_038">| Industrial Project Specialist</span></div>
+<div style="position:absolute;left:43.08px;top:545.66px" class="cls_036"><span class="cls_036">Michael Massing </span><span class="cls_038">| Vice President</span></div>
+<div style="position:absolute;left:249.77px;top:545.66px" class="cls_036"><span class="cls_036">Evan Perrault </span><span class="cls_038">| Brokerage Specialist</span></div>
+<div style="position:absolute;left:43.08px;top:555.62px" class="cls_036"><span class="cls_036">Patrick Sailer</span><span class="cls_038"> | Associate Vice President</span></div>
+<div style="position:absolute;left:249.77px;top:555.62px" class="cls_036"><span class="cls_036">Davis Lougheed </span><span class="cls_038">| Market Data and Research Coordinator</span></div>
+<div style="position:absolute;left:41.93px;top:612.19px" class="cls_045"><span class="cls_045">Colliers Canada | Calgary</span></div>
+<div style="position:absolute;left:41.93px;top:625.99px" class="cls_024"><span class="cls_024">CMN Calgary Inc.</span></div>
+<div style="position:absolute;left:408.46px;top:629.59px" class="cls_047"><span class="cls_047">collierscanada.com/</span><span class="cls_048">research</span></div>
+<div style="position:absolute;left:41.93px;top:636.79px" class="cls_024"><span class="cls_024">330, 115 Quarry Park Road SE</span></div>
+<div style="position:absolute;left:41.93px;top:647.59px" class="cls_024"><span class="cls_024">Calgary, Alberta T2C 5G9</span></div>
+<div style="position:absolute;left:393.24px;top:671.33px" class="cls_049"><span class="cls_049">Copyright © 2021 Colliers International. Information herein has</span></div>
+<div style="position:absolute;left:407.88px;top:678.53px" class="cls_049"><span class="cls_049">been obtained from sources deemed reliable, however its</span></div>
+<div style="position:absolute;left:390.84px;top:685.73px" class="cls_049"><span class="cls_049">accuracy cannot be guaranteed. The user is required to conduct</span></div>
+<div style="position:absolute;left:387.48px;top:692.93px" class="cls_049"><span class="cls_049">their own due diligence and verification. © 2021 CMN Calgary Inc.</span></div>
+<div style="position:absolute;left:481.30px;top:712.39px" class="cls_024"><span class="cls_024">Accelerating success.</span></div>
+<div style="position:absolute;left:38.21px;top:760.54px" class="cls_003"><span class="cls_003">Market Outlook</span></div>
+<div style="position:absolute;left:143.45px;top:760.54px" class="cls_003"><span class="cls_003">Market Overview</span></div>
+<div style="position:absolute;left:252.19px;top:760.54px" class="cls_003"><span class="cls_003">Market Statistics</span></div>
+<div style="position:absolute;left:360.07px;top:760.54px" class="cls_003"><span class="cls_003">Transaction Highlights</span></div>
+<div style="position:absolute;left:488.74px;top:760.46px" class="cls_003"><span class="cls_003">Contact</span></div>
+<div style="position:absolute;left:567.91px;top:759.86px" class="cls_002"><span class="cls_002">4</span></div>
+</div>
+
+</body>
+</html>
